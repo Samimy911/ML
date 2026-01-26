@@ -1,0 +1,11 @@
+x=df[['Age','Salary']]
+y=df['LeftCompany'] 
+scaler=StandardScaler()
+x_scaled=scaler.fit_transform(x)
+model=SVC()
+model.fit(x_scaled,y)
+predictions=model.predict(x_scaled)
+print("Predictions:", predictions). -> svc
+
+
+Fontsize-> decision trees
